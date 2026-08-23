@@ -80,7 +80,7 @@ export function App() {
             Digitalandia <span>/ labs</span>
           </a>
 
-          <a href="https://github.com/Digitalandia-dev" target="_blank" rel="noopener noreferrer" className="nav-link">
+          <a href="https://github.com/Digitalandia-dev/template-bun-react" target="_blank" rel="noopener noreferrer" className="nav-link">
             GitHub ↗
           </a>
         </header>
