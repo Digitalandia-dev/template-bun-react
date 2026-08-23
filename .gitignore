@@ -1,0 +1,81 @@
+# Dependencias
+node_modules/
+.pnpm-store/
+.yarn/cache/
+.bun/
+
+# Compilacion y artefactos (Vite, Bun, TypeScript)
+dist/
+dist-ssr/
+build/
+.output/
+.vite/
+.cache/
+*.tsbuildinfo
+
+# Variables de entorno y credenciales (Seguridad estricta)
+.env
+.env.local
+.env.*.local
+!.env.example
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+
+# Logs y depuracion
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Sistema operativo y archivos basura
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editores de codigo e IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+*.swp
+*.swo
+*.suo
+*.sln
+*.sublime-workspace
+*.sublime-project
+
+# Pruebas y reportes de cobertura
+coverage/
+.nyc_output/
+
+# Bases de datos locales y volcados temporales
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+
+# Entornos virtuales y scripts de Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.py
+
+# Herramientas de IA y carpetas de desarrollo interno
+scratch/
+Optimizaciones/
+.agents/
+skills-lock.json

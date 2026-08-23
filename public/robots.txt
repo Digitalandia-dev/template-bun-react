@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+Disallow: /page/
+Disallow: /private/
+
+# Permisos explicitos para motores de Inteligencia Artificial (GEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Mapeo del Sitemap
+Sitemap: https://www.digitalandia.com/sitemap.xml

@@ -1,0 +1,246 @@
+@charset "UTF-8";
+
+:root {
+  --bg: #050508;
+  --text: #f4f4f5;
+  --text-muted: #a1a1aa;
+  --accent: #863bff;
+  --accent-text: #b687ff;
+  --border: #27272a;
+  --border-focus: #52525b;
+  
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor Principal (Puro Texto, Sin Cajas) */
+.page {
+  max-width: 580px;
+  width: 100%;
+  padding: 2.5rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand img {
+  width: 20px;
+  height: 20px;
+}
+
+.brand span {
+  color: var(--accent-text);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  margin-left: 0.25rem;
+}
+
+.nav-link {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.nav-link:hover {
+  color: var(--text);
+}
+
+/* Titulares */
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Terminal / Snippet Plano */
+.cmd-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: #000000;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.65rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+}
+
+.cmd-box code {
+  color: var(--text);
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.cmd-prompt {
+  color: var(--accent-text);
+  margin-right: 0.4rem;
+  user-select: none;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  cursor: pointer;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+  flex-shrink: 0;
+}
+
+.copy-btn:hover {
+  color: var(--text);
+}
+
+.copy-btn.copied {
+  color: var(--accent-text);
+}
+
+/* Lista de Especificaciones (Puro Texto con Separadores) */
+.specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.specs span strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  padding-top: 0.5rem;
+}
+
+.footer-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.footer-btn:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+/* Vista de Privacidad */
+.privacy-page {
+  max-width: 620px;
+  width: 100%;
+  padding: 3rem 1.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.privacy-page h1 {
+  font-size: 1.6rem;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.privacy-page h2 {
+  font-size: 1rem;
+  color: var(--text);
+  margin-top: 0.5rem;
+  margin-bottom: 0.25rem;
+}
+
+.privacy-page strong {
+  color: var(--text);
+}
+
+.privacy-page ul {
+  padding-left: 1.25rem;
+}
+
+.privacy-page a {
+  color: var(--accent-text);
+  text-decoration: none;
+}
+
+.privacy-page a:hover {
+  text-decoration: underline;
+}
