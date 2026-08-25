@@ -22,6 +22,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build && bun scripts/inline-css.js",
+    "generate-favicons": "bun scripts/generate-favicons.js",
     "optimize-images": "bun scripts/optimize-images.js",
     "lint": "eslint .",
     "preview": "vite preview"

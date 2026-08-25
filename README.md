@@ -89,6 +89,7 @@ El servidor local estara disponible en `http://localhost:5173`.
 | `bun run dev` | Inicia el entorno de desarrollo local con recarga rapida (HMR). |
 | `bun run build` | Compila TypeScript, empaqueta con Vite e inyecta el CSS critico en `dist/index.html`. |
 | `bun run preview` | Inicia un servidor local para inspeccionar la compilacion de produccion. |
+| `bun run generate-favicons` | Genera suite de favicons multi-resolución (16x16, 32x32, 48x48, ICO, Apple Touch) desde `favicon.svg`. |
 | `bun run optimize-images` | Procesa y optimiza imagenes en lote al formato WebP. |
 | `bun run lint` | Ejecuta el linter estatico para comprobar reglas de React y TypeScript. |
 
