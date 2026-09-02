@@ -99,8 +99,7 @@ El servidor local estara disponible en `http://localhost:5173`.
 
 1. **Identidad Visual**: Sustituye los archivos `public/logo.svg` y `public/favicon.svg` por los vectores de tu marca.
 2. **Sistema de Diseno**: Ajusta las variables CSS en `src/index.css` (`--bg`, `--accent`, `--text`, `--border`).
-3. **Metadatos y Titulo**: Edita las etiquetas `<title>` y `<meta property="og:*">` en `index.html`.
-4. **Google Analytics 4**: Configura tu ID de medicion en el archivo `.env` (`VITE_GA_ID=G-XXXXXXXXXX`). El componente incluye carga diferida inteligente para no impactar las metricas de Core Web Vitals ni la puntuacion 100/100.
+4. **Analíticas**: Por defecto la web utiliza **Umami Analytics** (configurado en `index.html`). Si prefieres o requieres Google Analytics 4, se incluye el componente opcional `<GoogleAnalytics />` en `src/components/GoogleAnalytics.tsx` con carga diferida inteligente (0 ms TBT, 100/100 PSI) configurando `VITE_GA_ID` en `.env`.
 
 ---
 

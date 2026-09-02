@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { GoogleAnalytics } from './components/GoogleAnalytics';
 import { NotFound } from './pages/NotFound';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 
@@ -46,33 +45,23 @@ export function App() {
   };
 
   if (currentView === 'not-found') {
-    return (
-      <>
-        <GoogleAnalytics />
-        <NotFound />
-      </>
-    );
+    return <NotFound />;
   }
 
   if (currentView === 'privacy') {
     return (
-      <>
-        <GoogleAnalytics />
-        <PrivacyPolicy 
-          companyName="Digitalandia"
-          websiteUrl="https://digitalandia.com"
-          contactEmail="contacto@digitalandia.com"
-          lastUpdated="Agosto 2026"
-          onGoBack={() => navigateTo('home')}
-        />
-      </>
+      <PrivacyPolicy 
+        companyName="Digitalandia"
+        websiteUrl="https://digitalandia.com"
+        contactEmail="contacto@digitalandia.com"
+        lastUpdated="Agosto 2026"
+        onGoBack={() => navigateTo('home')}
+      />
     );
   }
 
   return (
-    <>
-      <GoogleAnalytics />
-      <main className="page">
+    <main className="page">
         {/* 1. Header Minimalista */}
         <header className="header">
           <a href="https://digitalandia.com/labs" target="_blank" rel="noopener noreferrer" className="brand">
@@ -136,7 +125,6 @@ export function App() {
           </button>
         </footer>
       </main>
-    </>
   );
 }
 
